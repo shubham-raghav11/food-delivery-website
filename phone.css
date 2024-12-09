@@ -1,0 +1,52 @@
+/* Navigation bar */
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul 
+/* Home section */
+#Home{
+height: 370px;
+padding: 3 px 68px;
+}
+
+#Home ::before{
+    height: 480px;
+    
+}
+
+#Home p{
+    font-size: 13px;
+}
+
+/* Services section */
+/* #services{
+
+} */
+#services {
+    flex-direction: column;
+}
+
+/* Client section */
+
+#clients {
+    flex-wrap: wrap;
+    width: 66px;
+    padding: 0px;
+}
+
+/* Contact us section */
+
+
+/* Footer */
+
+/* utility classes */
+
+.h-primary {
+    font-size: 26px;
+}
+
+.btn {
+
+}
