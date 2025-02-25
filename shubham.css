@@ -4,6 +4,10 @@ body{
     padding: 0px;
 }
 
+htlm{
+    scroll-behavior: smooth;
+}
+
 #logo {
     /* background-color: rgb(213, 58, 58); */
     font-style: oblique;
@@ -19,13 +23,15 @@ body{
 #navbar {
     display: flex;
     flex-direction: row;
+    align-items: center;
     /* background-color: #38598b;     */
-    position: relative ;
+    position: sticky ;
     top: 0px; 
+    z-index: 1;
     filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
 }
 
-navbar ::before{
+#navbar ::before{
 content: "";
 background-color: black;
 position: absolute;
@@ -33,9 +39,10 @@ height: 100%;
 width: 100%;
 top: 0px;
 left: 0px;
-opacity: 0.4;
 z-index: -1;
+opacity: 0.4;
 } 
+
 #navbar ul {
  display: flex;
  width: 50%;
@@ -50,7 +57,8 @@ z-index: -1;
 }
 
 #navbar ul li a {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     border-radius: 20px;
     color: brown;
@@ -70,9 +78,11 @@ z-index: -1;
 #Home {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 578px;
 }
 
@@ -81,8 +91,9 @@ content: "";
 position: absolute;
 background-image: url('./foodimages/food2.webp');
 background-repeat: no-repeat;
-background-size: 100%;
-height: 90%;
+background-size: cover;
+/* background-position: center; */
+height: 100%;
 width: 100%;
 top: 0px;
 left: 0px;
@@ -117,6 +128,7 @@ margin: 3px 6px;
 padding: 34px;
 background-color: #a2a8d3;
 border-radius : 28px;
+z-index: -1;
 }
 #services .box img{
     height: 110px;
@@ -235,5 +247,4 @@ footer{
 .center{
     text-align: center;
 }
-
 
